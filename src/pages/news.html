@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    @@include('./include/header.html')
+    <title> 新闻资讯 </title>
+</head>
+
+<body data-psd-width="1400">
+    <div class="page">
+        <div class="page-hd">
+            <div class="page-hd">
+                @@include('./include/page-hd.html',{
+                    "item1":"",
+                    "item2":"",
+                    "item3":"",
+                    "item4":"",
+                    "item5":"",
+                    "item6":"active",
+                    "item7":""
+                })
+            </div>
+        </div>
+        <div class="page-bd">
+            <div>
+                <img src="../assets/img/img_48.png" alt="" class="w100">
+            </div>
+            <div class="ch-box">
+                <div class="box-contain cell align-center">
+                    <a href="javascript:(void);" class="active">公司新闻</a>
+                    <a href="javascript:(void);">行业新闻</a>
+                </div>
+            </div>
+            <div class="news-pages">
+                <div class="cell align-center flex-wrap">
+                    <a href="#" class="tab-item">
+                        <p class="text-muted">2021.05.10</p>
+                        <p class="fs18 mt10 mb10">挑选移动水上乐园设备的最需要注意的几点，快拿本子记下吧！</p>
+                        <div class="img01">
+                            <img src="../assets/img/img_3.png" alt="">
+                        </div>
+                    </a>
+                    <a href="#" class="tab-item">
+                        <p class="text-muted">2021.05.10</p>
+                        <p class="fs18 mt10 mb10">挑选移动水上乐园设备的最需要注意的几点，快拿本子记下吧！</p>
+                        <div class="img01">
+                            <img src="../assets/img/img_3.png" alt="">
+                        </div>
+                    </a>
+                    <a href="#" class="tab-item">
+                        <p class="text-muted">2021.05.10</p>
+                        <p class="fs18 mt10 mb10">挑选移动水上乐园设备的最需要注意的几点，快拿本子记下吧！</p>
+                        <div class="img01">
+                            <img src="../assets/img/img_3.png" alt="">
+                        </div>
+                    </a>
+                    <a href="#" class="tab-item">
+                        <p class="text-muted">2021.05.10</p>
+                        <p class="fs18 mt10 mb10">挑选移动水上乐园设备的最需要注意的几点，快拿本子记下吧！</p>
+                        <div class="img01">
+                            <img src="../assets/img/img_3.png" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="cell justify-center align-center pages01 mt20">
+                    <span class="p-item fw600" style="font-family: simsun;">
+                        <
+                    </span>
+                    <span class="p-item active">1</span>
+                    <span class="p-item">2</span>
+                    <span class="p-item">3</span>
+                    <span class="p-item fw600" style="font-family: simsun;">
+                        >
+                    </span>
+                </div>
+            </div>
+            <div class=""></div>
+
+        </div>
+        <div class="page-ft">
+            @@include('./include/page-ft.html')
+        </div>
+    </div>
+
+    @@include('./include/footer.html')
+    <script>
+       $('.ch-box a').click(function(){
+           $(this).addClass('active').siblings('a').removeClass('active')
+       })
+    </script>
+</body>
+
+</html>

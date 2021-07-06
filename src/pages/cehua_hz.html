@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    @@include('./include/header.html')
+    <title> 策划规划成果 </title>
+</head>
+
+<body data-psd-width="1400">
+    <div class="page">
+        <div class="page-hd">
+            <div class="page-hd">
+                @@include('./include/page-hd.html',{
+                    "item1":"",
+                    "item2":"",
+                    "item3":"",
+                    "item4":"",
+                    "item5":"active",
+                    "item6":"",
+                    "item7":""
+                })
+            </div>
+        </div>
+        <div class="page-bd">
+            <div>
+                <img src="../assets/img/img_48.png" alt="" class="w100">
+            </div>
+            <div class="ch-box">
+                <div class="box-contain cell align-center">
+                    <a href="javascript:(void);">国内案例</a>
+                    <a href="javascript:(void);">国际案例</a>
+                    <a href="javascript:(void);">在建工程</a>
+                    <a href="javascript:(void);" class="active">合作客户</a>
+                </div>
+            </div>
+            <div class="brands-page">
+              
+                 
+                <div class="cell align-center flex-wrap">
+                    <div class="item">
+                        <img src="../assets/img/img_6.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="../assets/img/img_6.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="../assets/img/img_6.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="../assets/img/img_6.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="../assets/img/img_6.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="../assets/img/img_6.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="../assets/img/img_6.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="../assets/img/img_6.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="../assets/img/img_6.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="../assets/img/img_6.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="../assets/img/img_6.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="../assets/img/img_6.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="../assets/img/img_6.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="../assets/img/img_6.png" alt="">
+                    </div>
+                </div>
+                <div class="cell justify-center align-center pages01 mt20">
+                    <span class="p-item fw600" style="font-family: simsun;">
+                        <
+                    </span>
+                    <span class="p-item active">1</span>
+                    <span class="p-item">2</span>
+                    <span class="p-item">3</span>
+                    <span class="p-item fw600" style="font-family: simsun;">
+                        >
+                    </span>
+                </div>
+            </div>
+            <div class=""></div>
+
+        </div>
+        <div class="page-ft">
+            @@include('./include/page-ft.html')
+        </div>
+    </div>
+
+    @@include('./include/footer.html')
+    <script>
+       $('.ch-box a').click(function(){
+           $(this).addClass('active').siblings('a').removeClass('active')
+       })
+    </script>
+</body>
+
+</html>

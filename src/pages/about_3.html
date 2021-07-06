@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    @@include('./include/header.html')
+    <title> 企业环境 </title>
+</head>
+
+<body data-psd-width="1400">
+    <div class="page">
+        <div class="page-hd">
+            <div class="page-hd">
+                @@include('./include/page-hd.html',{
+                    "item1":"",
+                    "item2":"active",
+                    "item3":"",
+                    "item4":"",
+                    "item5":"",
+                    "item6":"",
+                    "item7":""
+                })
+            </div>
+        </div>
+        <div class="page-bd">
+            <div>
+                <img src="../assets/img/img_38.png" alt="" class="w100">
+            </div>
+            <div class="cell about-page">
+                <div class="about-l">
+                    <a href="about_1.html" class="cell align-center justify-between">
+                        <span>公司简介</span>
+                        <span style="font-family: simsun;" class="fw600">></span>
+                    </a>
+                    <a href="about_2.html" class="cell align-center justify-between">
+                        <span>企业文化</span>
+                        <span style="font-family: simsun;" class="fw600">></span>
+                    </a>
+                    <a href="about_3.html" class="cell align-center justify-between active">
+                        <span>企业环境</span>
+                        <span style="font-family: simsun;" class="fw600">></span>
+                    </a>
+                    <a href="about_4.html" class="cell align-center justify-between">
+                        <span>荣誉资质</span>
+                        <span style="font-family: simsun;" class="fw600">></span>
+                    </a>
+                </div>
+                <div class="about-r cell-1 about-r03">
+                    <div>
+                        <img src="../assets/img/img_36.png" alt="" class="img01">
+                    </div>
+                    <div class="mt30">
+                        <div>
+                            <div class="img02">
+                                <img src="../assets/img/img_41.png" alt="" class="w100">
+                            </div>
+                            <p class="fs18 mt30 mb30 ac text01">此文案为当前大图名称文案，图片文案仅作示意</p>
+                        </div>
+                        <div>
+
+
+                        </div>
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="swiper-zoom-container">
+                                        <img src="../assets/img/img_41.png" alt="" data-text="我是1">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-zoom-container">
+                                        <img src="../assets/img/img_41.png" alt="" data-text="我是2">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-zoom-container">
+                                        <img src="../assets/img/img_52.png" alt="" data-text="我是3">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-zoom-container">
+                                        <img src="../assets/img/img_52.png" alt="" data-text="我是4">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-zoom-container">
+                                        <img src="../assets/img/img_41.png" alt="" data-text="我是5">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-zoom-container">
+                                        <img src="../assets/img/img_41.png" alt="" data-text="我是6">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-zoom-container">
+                                        <img src="../assets/img/img_41.png" alt="" data-text="我是7">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next">></div>
+                            <div class="swiper-button-prev"><</div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="page-ft">
+            @@include('./include/page-ft.html')
+        </div>
+    </div>
+
+    @@include('./include/footer.html')
+    <script>
+         //			企业多个轮播 
+         var Swiper2 = new Swiper('.swiper-container', {
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            autoplayDisableOnInteraction: false, //      点击过后是否继续轮播
+            loop: true, //      是否需要无线循环
+            spaceBetween: 5,
+            slidesPerView: 5,
+            breakpoints: {
+                1200: {
+                    slidesPerView: 3,
+                    spaceBetween: 10
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 10
+                },
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 10
+                },
+                320: {
+                    slidesPerView: 2,
+                    spaceBetween: 10
+                }
+            }
+        });
+        $('.swiper-container img').click(function(){
+            console.log($(this).attr('src'));
+            $('.img02 img').attr('src',$(this).attr('src'));
+            $('.text01').html($(this).data('text'));
+        })
+    </script>
+</body>
+
+</html>
