@@ -577,6 +577,9 @@ input[type="text"] {
   color: #666666;
   line-height: 30px;
 }
+.page-ft .r-box dd > a:hover {
+  color: #008bdd;
+}
 .page-ft .r-box dt {
   margin-bottom: 15px;
 }
@@ -1290,6 +1293,11 @@ input[type="text"] {
   }
   .products-box .text03 {
     font-size: 12px;
+    display: inline-block;
+    width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   .products-box .tlt-box img {
     width: 35px;
