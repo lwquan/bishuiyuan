@@ -14,8 +14,8 @@
                     "item1":"",
                     "item2":"",
                     "item3":"",
-                    "item4":"active",
-                    "item5":"",
+                    "item4":"",
+                    "item5":"active",
                     "item6":"",
                     "item7":""
                 })
@@ -23,9 +23,17 @@
         </div>
         <div class="page-bd">
             <div>
-                <img src="../assets/img/img_46.png" alt="" class="w100">
+                <img src="../assets/img/img_48.png" alt="" class="w100">
             </div>
-            <div class="planning-page">
+            <div class="ch-box">
+                <div class="box-contain cell align-center">
+                    <a href="javascript:(void);" class="active">国内案例</a>
+                    <a href="javascript:(void);">国际案例</a>
+                    <a href="javascript:(void);">在建工程</a>
+                    <a href="gongcheng_hz.html">合作客户</a>
+                </div>
+            </div>
+            <div class="planning-page" style="padding-top: .27rem;">
               
                  
                 <div class="cell align-center flex-wrap">
@@ -60,7 +68,7 @@
                         <p>山东临沂水上乐园</p>
                     </div>
                 </div>
-                <div class="cell justify-center align-center mt20 pages01">
+                <div class="cell justify-center align-center pages01">
                     <span class="p-item fw600" style="font-family: simsun;">
                         <
                     </span>
@@ -72,6 +80,7 @@
                     </span>
                 </div>
             </div>
+            <div class=""></div>
 
         </div>
         <div class="page-ft">
@@ -81,7 +90,9 @@
 
     @@include('./include/footer.html')
     <script>
-       
+       $('.ch-box a').click(function(){
+           $(this).addClass('active').siblings('a').removeClass('active')
+       })
     </script>
 </body>
 

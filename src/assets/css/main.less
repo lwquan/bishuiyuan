@@ -264,6 +264,7 @@ input[type="text"] {
         line-height: 35px;
 
         .title {
+			display: block;
             color: #666666;
             font-size: 12px;
             padding-left: 10px;
@@ -328,6 +329,14 @@ input[type="text"] {
 
 }
 
+.banner-box {
+	.swiper-pagination-bullet {
+		width: 40px;
+		height: 4px;
+		border-radius: 0;
+	}
+}
+
 .hot-box {
     background-color: #008bdd33;
     padding: 20px 0px;
@@ -387,6 +396,7 @@ input[type="text"] {
     }
 
     .btn-1 {
+	 display: block;
         width: 180px;
         height: 50px;
         border-radius: 25px;
@@ -1311,6 +1321,12 @@ input[type="text"] {
 }
 
 @media (max-width:768px) {
+	.banner-box {
+		.swiper-pagination-bullet {
+			width: 30px;
+			height: 3px;
+		}
+	}
     .contact-page {
         .top-box {
             .tlt {

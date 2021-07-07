@@ -1,10 +1,10 @@
 $(function(){
 	$(".nav-skip").click(function(){
 		$(this).toggleClass('toggled');
-		$('.menu-nav').toggle();
+		$('.menu-nav').fadeToggle();
 	})
 	$(".menu-nav .cell").click(function(){
-		$(this).siblings('.childContent').toggle();
+		$(this).siblings('.childContent').slideToggle();
 	})
 	$(".search_web").click(function(){
 		$('.search_form').slideToggle();
